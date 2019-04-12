@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Dia EXATEC</title>
+</head>
+
+<body>
+
+
+    <nav class="blue darken-4">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="Home.html" class="brand-logo">Día Mundial EXATEC</a>
+        <a class="button-collapse" data-activates="mobile-nav" href="#">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+
+          <li>
+            <a class="dropdown-button" data-activates="my-dropdown2" href="#!">Crear evento
+              <i class="material-icons right">arrow_drop_down</i>
+            </a>
+          </li>
+
+
+          <li>
+            <a class="dropdown-button" data-activates="my-dropdown" href="Eventos.html">Eventos
+              <i class="material-icons right">arrow_drop_down</i>
+            </a>
+          </li>
+
+        </ul>
+        <ul class="side-nav" id="mobile-nav">
+          <li>
+            <a href="RegCasa.html">Regreso a casa</a>
+          </li>
+          <li>
+            <a href="DiaExatec.html">Dia mundial EXATEC</a>
+          </li>
+          <li>
+            <a href="ExatecTalks.html">EXATEC talks</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="blue darken-3">
+    <div class="nav-wrapper">
+      <form>
+        <div class="input-field">
+          <input type="search" id="search" required>
+          <label for="search" class="label-icon">
+            <i class="material-icons">search</i>
+          </label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+  <!-- DROPDOWN MENU -->
+  <ul id="my-dropdown" class="dropdown-content">
+    <li>
+      <a href="RegCasa.html">Regreso a casa</a>
+    </li>
+    <li>
+      <a href="DiaExatec.html">Dia mundial EXATEC</a>
+    </li>
+    <li>
+      <a href="ExatecTalks.html">EXATEC talks</a>
+    </li>
+  </ul>
+
+  <ul id="my-dropdown2" class="dropdown-content">
+    <li>
+      <a href="#">Regreso a casa</a>
+    </li>
+    <li>
+      <a href="#">Dia mundial EXATEC</a>
+    </li>
+    <li>
+      <a href="#">EXATEC talks</a>
+    </li>
+  </ul>
+
+    <table class="bordered highlight responsive-table">
+      <thead>
+        <tr>
+          <th>Matricula</th>
+          <th>Dia Mundial</th>
+          <th>Fecha</th>
+          <th>Costo</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>John Doe</th>
+          <th>jdoe@gmail.com</th>
+          <th>New York</th>
+        </tr>
+        <tr>
+          <th>Bob Johnson</th>
+          <th>bob@yahoo.com</th>
+          <th>Boston</th>
+        </tr>
+        <tr>
+          <th>Karen Williams</th>
+          <th>karen@yahoo.com</th>
+          <th>Miami</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+    <br>
+
+
+
+
+
+
+
+  <div style="margin-top: 500px;"></div>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.dropdown-button').dropdown({
+        constrainWidth: false,
+        hover: true,
+        belowOrigin: true,
+        alignment: 'left'
+      });
+
+
+
+
+
+
+    });
+  </script>
+</body>
+
+</html>
