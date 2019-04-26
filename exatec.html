@@ -78,6 +78,7 @@ home
           <th>Apellido P</th>
           <th>Apellido M</th>
           <th>Estado</th>
+          <th>Mas info.</th>
           <th>Editar</th>
           <th>Eliminar</th>
           
@@ -97,9 +98,20 @@ home
           <th>Angeles</th>
           <th>De Cordova</th>
           <th>Activo</th>
+          <th> 
+            <a class="modal-trigger" href="#modal3"><i class="material-icons">
+info
+</i></a>
+      
+
+      </div>
+    </div>
+
+      </th>
           <th> <a href="editarExatec.html"><i class="material-icons">border_color</i></a></th>
           <th> <a href="#"><i class="material-icons">delete</i></a></th>
         </tr>
+
 
         
 
@@ -131,10 +143,54 @@ home
         </li>
       </ul>
 
+      
+
 
     </div> 
     
 
+
+    <!-- BOTTOM SHEET MODAL -->
+    <div id="modal3" class="modal bottom-sheet">
+      <div>
+        <h4>Mas informacion </h4>
+        <table class="bordered highlight responsive-table">
+      <thead>
+        <tr>
+          <th>Generacion</th>
+          <th>Carrera</th>
+          
+          <th>Campus</th>
+          <th>Tel. casa</th>
+          <th>Tel. oficina</th>
+          <th>Correo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>2016-2020</th>
+          <th>ITIC </th>
+          <th>Hidalgo</th>
+          <th>7712717232</th>
+          <th>3224323423</th>
+          <th>alguien@gmial.com</th>
+        
+        </tr>
+
+
+        
+
+      </tbody>
+    </table>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+      </div>
+    </div>
 
 
 
@@ -154,7 +210,14 @@ home
         alignment: 'left'
       });
 
-
+      $('.modal').modal({
+        dismissible: true,
+        inDuration: 300,
+        outDuration: 200,
+        ready: function (modal, trigger) {
+          console.log('Modal Opened', modal, trigger);
+        }
+      });
 
 
 
