@@ -19,15 +19,15 @@
     <nav class="blue darken-4">
     <div class="container">
       <div class="nav-wrapper">
-        <a href="Home.html" class="brand-logo">Eventos</a>
+        <a href="infoEvent.html" class="brand-logo">Eventos</a>
         <a class="button-collapse" data-activates="mobile-nav" href="#">
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
 
           <li>
-            <a class="dropdown-button" data-activates="my-dropdown" href="#!">Eventos
-              <i class="material-icons right">arrow_drop_down</i>
+            <a class="dropdown-button" data-activates="my-dropdown" href="RegCasa.html">Eventos
+              <i class="material-icons right">event</i>
             </a>
           </li>
 
@@ -48,33 +48,69 @@
 <form>
       <!-- TEXT FIELD -->
       <div class="input-field">
+        <input id="matricula" type="text">
+        <label for="matricula">Matricula</label>
+      </div>
+
+      <div class="input-field">
         <input id="name" type="text">
         <label for="name">Nombre</label>
       </div>
 
       <div class="input-field">
-        <input id="description" type="text">
-        <label for="description">Descripcion</label>
+        <input id="apePat" type="text">
+        <label for="apePat">Apellido P</label>
       </div>
 
       <div class="input-field">
-        <input type="text" class="datepicker" id="date">
-        <label for="date">Choose a Date</label>
-      </div>
-
-      <div>
-        <input type="text" class="timepicker" id="time">
-        <label for="time">Hora</label>
+        <input id="apeMat" type="text">
+        <label for="apeMat">Apellido M</label>
       </div>
 
       <div class="input-field">
-        <input id="cost" type="text">
-        <label for="cost">Costo</label>
+        <input id="generation" type="text">
+        <label for="generation">Generacion</label>
       </div>
 
+      <div class="input-field">
+        <input id="carrera" type="text">
+        <label for="carrera">Carrera</label>
+      </div>
 
+      <div class="switch">
+        <label>
+          Inactivo
+          <input type="checkbox" checked>
+          <span class="lever"></span>
+          Activo
+        </label>
+      </div>
 
       <br>
+
+
+
+
+
+      <div class="input-field">
+        <i class="material-icons prefix">phone</i>
+        <input id="phone" type="tel">
+        <label for="phone">Telefono </label>
+      </div>
+
+      
+
+
+
+      <!-- VALIDATION & ERROR -->
+      <!--<div class="input-field">
+        <input placeholder="Email" id="email" type="email" value="ejemplo@gmail.com" class="validate">
+        <label data-error="Invalid" data-success="Valid" for="email">Email</label>
+      </div>-->
+
+
+
+
 
       
       <div>
